@@ -5,7 +5,7 @@ icon_path="icon.ico"
 tkt.iconbitmap(icon_path)
 def new_file():
     en1.delete("1.0",tk.END)
-    tkt.title("Nodepad - New")
+    tkt.title("Litepad - New")
 def open_file():
     file_path = fd.askopenfilename(defaultextension=".txt", filetypes=[("Text Files", "*.txt"), ("All Files", "*.*")])
     if file_path:
@@ -13,7 +13,7 @@ def open_file():
             content = file.read()
             en1.delete("1.0", tk.END)
             en1.insert(tk.END, content)
-        tkt.title(f"Notepad - {file_path}")
+        tkt.title(f"Litepad- {file_path}")
 
 def save_file(event=None):
     global current_file_path
@@ -21,7 +21,7 @@ def save_file(event=None):
         with open(current_file_path, 'w') as file:
             content = en1.get("1.0", tk.END)
             file.write(content)
-        tkt.title(f"Notepad - {current_file_path}")
+        tkt.title(f"Litepad - {current_file_path}")
     else:
         save_as()
 
@@ -36,7 +36,7 @@ def save_as():
         with open(file_path, 'w') as file:
             content = en1.get("1.0", tk.END)
             file.write(content)
-        tkt.title(f"Notepad - {file_path}")
+        tkt.title(f"Litepad- {file_path}")
         set_current_file_path(file_path)
 
 def set_current_file_path(file_path):
@@ -47,7 +47,7 @@ def set_current_file_path(file_path):
 def exitapp():
     tkt.destroy()
  
-tkt.title("Nodepad")
+tkt.title("Litepad")
 menu=tk.Menu(tkt)
 tkt.config(bg="white",menu=menu)
 tkt.geometry("800x600")
