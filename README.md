@@ -1,2 +1,2 @@
-# Litepad is notepad type text editor developed in Python.
-Downlaod the icon.ico file for proper functioning of the .exe file
+# Litepad is a notepad type text editor developed in Python.
+Download the icon.ico file for the proper functioning of the .exe
