@@ -33,12 +33,7 @@ For users who prefer to use the pre-built executable (`Litepad.exe`), there are 
     cd litepad
     ```
 
-3. Install the required dependencies:
-    ```bash
-    pip install -r requirements.txt
-    ```
-
-4. Run the application:
+3. Run the application:
     ```bash
     python litepad.py
     ```
