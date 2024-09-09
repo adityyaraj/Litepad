@@ -46,6 +46,8 @@ def set_current_file_path(file_path):
 
 def exitapp():
     tkt.destroy()
+def exitapp():
+    tkt.destroy()
  
 tkt.title("Litepad")
 menu=tk.Menu(tkt)
